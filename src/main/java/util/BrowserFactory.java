@@ -38,8 +38,6 @@ public static void readConfig() {
 
 
 public static WebDriver init() {
-//	System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
-//	driver = new ChromeDriver();
 	
 	readConfig();
 
@@ -53,7 +51,7 @@ public static WebDriver init() {
 	}
 
 	driver.manage().deleteAllCookies();
-	driver.get("http://techfios.com/test/101/");
+	driver.get(url);
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	return driver;

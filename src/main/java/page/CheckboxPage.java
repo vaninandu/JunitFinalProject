@@ -78,7 +78,7 @@ public class CheckboxPage {
 	public int removeAllItems() {
 		REMOVE_ELEMENT.click();
 		List<WebElement> checkBoxElement = driver.findElements(By.xpath("//div[@id='todos-content']//input[@type='checkbox']"));
-		int checkBox = checkBoxElement.size();		
+		int checkBox = checkBoxElement.size();	
 		return checkBox;
 
 	}
